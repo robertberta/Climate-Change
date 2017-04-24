@@ -1,0 +1,4 @@
+CREATE KEYSPACE demoapp WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1 };
+CREATE TABLE demoapp.temperatures(date text, station text, tmax int, tmin int , PRIMARY KEY (date,station));
+CREATE KEYSPACE test WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1 };
+CREATE TABLE test.temperatures(date text, station text, tmax int, tmin int , PRIMARY KEY (date,station));
